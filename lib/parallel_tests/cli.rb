@@ -94,6 +94,7 @@ module ParallelTests
     end
 
     def run_tests(group, process_number, num_processes, options)
+      sleep (process_number.to_i*5)
       if group.empty?
         { stdout: '', exit_status: 0, command: nil, seed: nil }
       else
